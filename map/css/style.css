@@ -1,0 +1,99 @@
+body {
+  background-image: url(../map.png);
+  background-size: 100% 100%;
+}
+p.auto-space {
+  word-wrap: break-word; /* IE 5.5-7 */
+  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+  white-space: pre-wrap;
+}
+.flag {
+  position: absolute;
+  width: 3.24vw;
+  height: 5.8vh;
+  transition: 0.3s;
+}
+
+.flag:hover {
+  opacity: 0.5;
+}
+
+.ro {
+  left: 61vw;
+  top: 64vh;
+}
+
+.ge {
+  left: 41vw;
+  top: 50vh;
+}
+
+.ic {
+  left: 8vw;
+  top: 14vh;
+}
+
+.ir {
+  left: 18vw;
+  top: 45vh;
+}
+
+.uk {
+  left: 26vw;
+  top: 43vh;
+}
+
+.fr {
+  left: 32vw;
+  top: 63vh;
+}
+
+.be {
+  left: 35vw;
+  top: 52vh;
+  width: 2vw;
+  height: 3.8vh;
+}
+
+.nl {
+  left: 36vw;
+  top: 47vh;
+  width: 2vw;
+  height: 3.8vh;
+}
+
+.lx {
+  left: 37.5vw;
+  top: 55.5vh;
+  width: 1vw;
+  height: 1.9vh;
+}
+
+.sz {
+  left: 39vw;
+  top: 62vh;
+  width: 2vw;
+  height: 3.8vh;
+}
+
+.it {
+  left: 45vw;
+  top: 73vh;
+}
+
+.es {
+  left: 22vw;
+  top: 80vh;
+}
+
+.pt {
+  left: 15vw;
+  top: 82vh;
+}
+
+.au {
+  left: 48vw;
+  top: 61vh;
+  width: 2vw;
+  height: 3.8vh;
+}
