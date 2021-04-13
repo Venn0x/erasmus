@@ -262,13 +262,36 @@ p.auto-space {
 .cy {
   left: 75.5vw;
   top: 96vh;
-  width: 1vw;
-  height: 1.9vh;
+  width: 2vw;
+  height: 3.8vh;
+  border: 2px solid black;
+  border-radius: 50%;
 }
 
-.ge {
-  left: 75.5vw;
-  top: 86vh;
-  width: 1vw;
-  height: 1.9vh;
+.geo {
+  left: 87.5vw;
+  top: 76vh;
+  width: 2vw;
+  height: 3.8vh;
+}
+
+.ar {
+  left: 90.5vw;
+  top: 81vh;
+  width: 2vw;
+  height: 3.8vh;
+}
+
+.az {
+  left: 94.5vw;
+  top: 81vh;
+  width: 2vw;
+  height: 3.8vh;
+}
+
+.dm {
+  left: 41vw;
+  top: 37vh;
+  width: 2vw;
+  height: 3.8vh;
 }
