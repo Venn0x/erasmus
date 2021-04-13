@@ -207,3 +207,68 @@ p.auto-space {
   left: 64vw;
   top: 44vh;
 }
+
+.an {
+  left: 30.6vw;
+  top: 75.5vh;
+  width: 1vw;
+  height: 1.9vh;
+}
+
+.lt {
+  left: 60vw;
+  top: 40vh;
+  width: 2vw;
+  height: 3.8vh;
+}
+
+.la {
+  left: 62vw;
+  top: 35.8vh;
+  width: 2vw;
+  height: 3.8vh;
+}
+
+.et {
+  left: 62vw;
+  top: 30.8vh;
+  width: 2vw;
+  height: 3.8vh;
+}
+
+.ru {
+  left: 82vw;
+  top: 30.8vh;
+}
+
+.fl {
+  left: 60vw;
+  top: 20.8vh;
+}
+
+.sw {
+  left: 48vw;
+  top: 20.8vh;
+}
+.nw {
+  left: 40vw;
+  top: 20.8vh;
+}
+.tk {
+  left: 75vw;
+  top: 82.8vh;
+}
+
+.cy {
+  left: 75.5vw;
+  top: 96vh;
+  width: 1vw;
+  height: 1.9vh;
+}
+
+.ge {
+  left: 75.5vw;
+  top: 86vh;
+  width: 1vw;
+  height: 1.9vh;
+}
