@@ -1,0 +1,188 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style type="text/css">
+		body {
+		    background-image: url(map.png);
+		    background-size: 100% 100%;
+		}
+
+		.flag{
+			position: absolute;
+			width: 3.24vw;
+			height: 5.8vh;
+			transition: 0.3s;
+		}
+
+		.flag:hover{
+			opacity: 0.5;
+		}
+
+		.ro{
+			left: 61vw;
+			top: 64vh;
+		}
+
+		.ge{
+			left: 41vw;
+			top: 50vh;
+		}
+
+		.ic{
+			left: 8vw;
+			top: 14vh;
+		}
+
+		.ir{
+			left: 18vw;
+			top: 45vh;
+		}
+
+		.uk{
+			left: 26vw;
+			top: 43vh;
+		}
+
+		.fr{
+			left: 32vw;
+			top: 63vh;
+		}
+
+		.be{
+			left: 35vw;
+			top: 52vh;
+			width: 2.00vw;
+			height: 3.8vh;
+		}
+
+		.nl{
+			left: 36vw;
+			top: 47vh;
+			width: 2.00vw;
+			height: 3.8vh;
+		}
+
+		.lx{
+			left: 37.5vw;
+			top: 55.5vh;
+			width: 1.00vw;
+			height: 1.9vh;
+		}
+
+		.sz{
+			left: 39vw;
+			top: 62vh;
+			width: 2.00vw;
+			height: 3.8vh;
+		}
+
+		.it{
+			left: 45vw;
+			top: 73vh;
+		}
+
+		.es{
+			left: 22vw;
+			top: 80vh;
+		}
+
+		.pt{
+			left: 15vw;
+			top: 82vh;
+		}
+
+		.au{
+			left: 48vw;
+			top: 61vh;
+			width: 2.00vw;
+			height: 3.8vh;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	
+	<img class="flag ro" 	src="flags/romania.png" 		onclick="cinfo('romania')">
+	<img class="flag ge" 	src="flags/germany.png" 		onclick="cinfo('germany')">
+	<img class="flag ic" 	src="flags/iceland.png" 		onclick="cinfo('iceland')">
+	<img class="flag ir" 	src="flags/ireland.png" 		onclick="cinfo('ireland')">
+	<img class="flag uk" 	src="flags/united-kingdom.png" 	onclick="cinfo('united-kingdom')">
+	<img class="flag fr" 	src="flags/france.png" 			onclick="cinfo('france')">
+	<img class="flag be" 	src="flags/belgium.png" 		onclick="cinfo('belgium')">
+	<img class="flag nl" 	src="flags/netherlands.png" 	onclick="cinfo('netherlands')">
+	<img class="flag lx" 	src="flags/luxembourg.png" 		onclick="cinfo('luxembourg')">
+	<img class="flag it" 	src="flags/italy.png" 			onclick="cinfo('italy')">
+	<img class="flag es" 	src="flags/spain.png" 			onclick="cinfo('spain')">
+	<img class="flag pt" 	src="flags/portugal.png" 		onclick="cinfo('portugal')">
+	<img class="flag au" 	src="flags/austria.png" 		onclick="cinfo('austria')">
+	<img class="flag sz" 	src="flags/switzerland.png" 	onclick="cinfo('switzerland')">
+	<img class="flag sz" 	src="flags/switzerland.png" 	onclick="cinfo('switzerland')">
+
+	<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+
+      <header class="w3-container w3-light-grey"> 
+
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+
+		<h2 id="title"></h2>
+
+      </header>
+      <div class="w3-container" id="content">
+        
+      </div>
+      <footer class="w3-container w3-light-grey">
+        <p> </p>
+      </footer>
+    </div>
+  </div>
+
+</body>
+
+<script>
+
+	function cinfo(country){
+
+		console.log(country);
+
+		var xobj = new XMLHttpRequest();
+		xobj.overrideMimeType("application/html");
+		xobj.open('GET', 'countries/' + country + '.html', true);
+		xobj.onreadystatechange = function () {
+			if (xobj.readyState == 4 && xobj.status == "200") {
+			
+				let ob = xobj.responseText;
+
+				document.getElementById("title").innerHTML = capitalize(country);
+				document.getElementById("content").innerHTML = ob;
+
+				document.getElementById('id01').style.display='block';
+
+			}
+		};
+		xobj.send(null); 
+
+
+	}
+
+
+	// Get the modal
+	var modal = document.getElementById('id01');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+	    modal.style.display = "none";
+	  }
+	}
+
+	function capitalize(string) {
+	  return string.charAt(0).toUpperCase() + string.slice(1);
+	}
+
+</script>
+
+</html>
