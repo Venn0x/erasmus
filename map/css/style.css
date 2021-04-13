@@ -2,11 +2,13 @@ body {
   background-image: url(../map.png);
   background-size: 100% 100%;
 }
+
 p.auto-space {
   word-wrap: break-word; /* IE 5.5-7 */
   white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
   white-space: pre-wrap;
 }
+
 .flag {
   position: absolute;
   width: 3.24vw;
@@ -96,4 +98,51 @@ p.auto-space {
   top: 61vh;
   width: 2vw;
   height: 3.8vh;
+}
+
+.pl {
+  left: 54vw;
+  top: 48vh;
+}
+
+.cz {
+  left: 49vw;
+  top: 54.5vh;
+  width: 2vw;
+  height: 3.8vh;
+}
+
+.sl {
+  left: 48.5vw;
+  top: 65.5vh;
+  width: 1.5vw;
+  height: 2.9vh;
+}
+
+.cr {
+  left: 51vw;
+  top: 65.9vh;
+  width: 1.5vw;
+  height: 2.9vh;
+}
+
+.bo {
+  left: 52.5vw;
+  top: 70vh;
+  width: 1.5vw;
+  height: 2.9vh;
+}
+
+.mt {
+  left: 54.6vw;
+  top: 74.5vh;
+  width: 1.5vw;
+  height: 2.9vh;
+}
+
+.sr {
+  left: 56.5vw;
+  top: 70vh;
+  width: 1.5vw;
+  height: 2.9vh;
 }
